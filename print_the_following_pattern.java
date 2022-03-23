@@ -1,16 +1,16 @@
-
-import java.util.Scanner;
+import  java.util.*;
 class p{
     public static void main(String args[]){
-        Scanner s=new Scanner(System.in);
-        int n=s.nextInt();
-        int temp=n;
-        while(temp>0){
-            for(int i=n;i>=1;i--){
-                System.out.print(i+" ");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+    
+            for(int i=65+(n-1);i>=65;i--){
+                for(int j=1;j<=n;j++){
+                System.out.print((char)i+" ");
+                
             }
+            n--;
             System.out.println();
-            temp--;
+            }
         }
     }
-}
